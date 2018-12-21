@@ -1,19 +1,19 @@
-#°²×°Ìõ¼ş¼°¹ı³Ì£º
-* ĞèÒªÒ»Ì¨root¹ıµÄandroid4.4.xµÄÉè±¸
-* ÔÚ¸ÃÉè±¸ÖĞ°²×°Xposed Installer¿Í»§¶Ë£¬ÓÉÓÚ°²×°XposedÊ±£¬ĞèÒª½«androidµÄapp_main.cppµÈÎÄ¼ş½øĞĞÌæ»»£¬     
-ËùÒÔĞèÒªandroidµÄrootÈ¨ÏŞ
-* °²×°±àĞ´ºÃµÄcom.bingpang.methodhookÄ£¿éÖÁ¸Ã¿Í»§¶Ë£¬´ËÊ±Xposed¿Í»§¶Ë½«»á¼ì²âµ½ÓĞXposedÄ£¿é£¬ÈçÍ¼ËùÊ¾    
-![°²×°Ä£°å½ØÍ¼](moban.png)
-* ¹´Ñ¡¸ÃÄ£°å²¢ÖØÆôandroidÉè±¸
+# å®‰è£…æ¡ä»¶åŠè¿‡ç¨‹ï¼š
+* éœ€è¦ä¸€å°rootè¿‡çš„android4.4.xçš„è®¾å¤‡
+* åœ¨è¯¥è®¾å¤‡ä¸­å®‰è£…Xposed Installerå®¢æˆ·ç«¯ï¼Œç”±äºå®‰è£…Xposedæ—¶ï¼Œéœ€è¦å°†androidçš„app_main.cppç­‰æ–‡ä»¶è¿›è¡Œæ›¿æ¢ï¼Œ     
+æ‰€ä»¥éœ€è¦androidçš„rootæƒé™
+* å®‰è£…ç¼–å†™å¥½çš„com.bingpang.methodhookæ¨¡å—è‡³è¯¥å®¢æˆ·ç«¯ï¼Œæ­¤æ—¶Xposedå®¢æˆ·ç«¯å°†ä¼šæ£€æµ‹åˆ°æœ‰Xposedæ¨¡å—ï¼Œå¦‚å›¾æ‰€ç¤º    
+![å®‰è£…æ¨¡æ¿æˆªå›¾](moban.png)
+* å‹¾é€‰è¯¥æ¨¡æ¿å¹¶é‡å¯androidè®¾å¤‡
 ----
 ----
 ----
-#Hook Method½âÎö
-##ÊµÏÖµÄ¹¦ÄÜ
-* ±êÇ©ÎªFMµÄlogÊä³öÁË¾ßÌåÃô¸Ğº¯ÊıµÄÀàºÍ·½·¨Ãû£¬Èçandroid.telephony.SmsManager->sendTextMessage
-* ±êÇ©ÎªDetailInformµÄlogÔòÊä³öÁËÃô¸Ğº¯ÊıÏàÓ¦µÄÊı¾İ£¬ÈçÔÚandroid.telephony.SmsManager->sendTextMessageÖĞ      
-»áÊä³öSend SMS -> SMS DestNumber: destNumber , SMS Content: Content      
-##¾ßÌåµÄÃô¸Ğº¯ÊıÁĞ±í
+# Hook Methodè§£æ
+## å®ç°çš„åŠŸèƒ½
+* æ ‡ç­¾ä¸ºFMçš„logè¾“å‡ºäº†å…·ä½“æ•æ„Ÿå‡½æ•°çš„ç±»å’Œæ–¹æ³•åï¼Œå¦‚android.telephony.SmsManager->sendTextMessage
+* æ ‡ç­¾ä¸ºDetailInformçš„logåˆ™è¾“å‡ºäº†æ•æ„Ÿå‡½æ•°ç›¸åº”çš„æ•°æ®ï¼Œå¦‚åœ¨android.telephony.SmsManager->sendTextMessageä¸­      
+ä¼šè¾“å‡ºSend SMS -> SMS DestNumber: destNumber , SMS Content: Content      
+## å…·ä½“çš„æ•æ„Ÿå‡½æ•°åˆ—è¡¨
 *SmsManager*
 1. android.telephony.SmsManager/sendTextMessage
 2. android.telephony.SmsManager/getAllMessagesFromIcc
